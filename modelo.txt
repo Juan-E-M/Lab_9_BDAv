@@ -1,0 +1,15 @@
+AColección: profesores
+campos: 
+_id
+nombres
+apellidos
+grado_de_estudio
+curso
+sexo
+telefono
+
+Models-> Profesor.js(completa)
+
+routes-> profesor.js (kevin)
+
+Views->profesor-> create.hbs(bill) , edit.hbs (juan) , index.hbs(aldo) , show.hbs(ruben)

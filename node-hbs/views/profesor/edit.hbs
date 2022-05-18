@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editar Profesor</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/profesores">Lista de Profesores</a></h3>
+            <h1>Editar Profesor</h1>
+            <form action="/profesores/update/{{ profesor._id }}" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                        <td>DNI</td>
+                        <td>{{ profesor._id }}</td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td><input type="text" name="nombres" value="{{ profesor.nombres }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido</td>
+                            <td><input type="text" name="apellidos" value="{{ profesor.apellidos }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Grado de Estudio</td>
+                            <td><input type="text" name="grado_de_estudio" value="{{ profesor.grado_de_estudio }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Curso</td>
+                            <td><input type="text" name="curso" value="{{ profesor.curso }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><input type="text" name="sexo" value="{{ profesor.sexo }}" /></td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td><input type="text" name="telefono" value="{{ profesor.telefono }}" /></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"><button type="submit">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

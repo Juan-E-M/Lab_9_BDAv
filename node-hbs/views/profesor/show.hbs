@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detalle de Profesor</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/profesores">Lista de Profesores</a></h3>
+            <h1>Detalle de Profesor</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>DNI</td>
+                        <td>{{ profesor._id }}</td>
+                    </tr>
+                    <tr>
+                        <td>Nombres</td>
+                        <td>{{ profesor.nombres }}</td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos</td>
+                        <td>{{ profesor.apellidos }}</td>
+                    </tr>
+                    <tr>
+                        <td>Grado de Estudio</td>
+                        <td>{{ profesor.grado_de_estudio }}</td>
+                    </tr>
+                    <tr>
+                        <td>Curso</td>
+                        <td>{{ profesor.curso }}</td>
+                    </tr>
+                    <tr>
+                        <td>Sexo</td>
+                        <td>{{ profesor.sexo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Telefono</td>
+                        <td>{{ profesor.telefono }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a href="/profesores/edit/{{ profesor._id }}">EDIT</a></h3>
+            <form action="/profesores/delete/{{ profesor._id }}" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    </body>
+</html>

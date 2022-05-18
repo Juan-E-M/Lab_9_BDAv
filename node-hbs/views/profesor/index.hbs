@@ -1,0 +1,39 @@
+<h1>{{title}}</h1>
+
+<h1> Profesores</h1>
+    <p >
+        <div class="container">
+            <h3><a href="/profesores/create">Crear Profesor</a></h3>
+            <h1>Lista de Profesores</h1>
+            {{#if profesores }}
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>DNI</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Grado de Estudio</th>
+                            <th>Curso</th>
+                            <th>Sexo</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{# each profesores }}
+                        <tr>
+                            <td><a href="/profesores/show/{{ _id }}">{{ _id}}</a></td>
+                            <td><a href="/profesores/show/{{ _id }}">{{nombres}}</a></td>
+                            <td>{{ apellidos }}</td>
+                            <td>{{ grado_de_estudio }}</td>
+                            <td>{{ curso }}</td>
+                            <td>{{ sexo }}</td>
+                            <td>{{ telefono }}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            {{~^~}}
+                <div>Profesores no encontrados.</div>
+            {{/if}}
+        </div>
+    </p>

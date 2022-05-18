@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear Profesor</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3><a href="/profesores">Lista de Profesores</a></h3>
+            <h1>Crear Nuevo Profesor</h1>
+            <form action="/profesores/save" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>DNI</td>
+                            <td><input type="text" name="_id" /></td>
+                        </tr>
+                        <tr>
+                            <td>Nombre</td>
+                            <td><input type="text" name="nombres" /></td>
+                        </tr>
+                        <tr>
+                            <td>Apellido</td>
+                            <td><input type="text" name="apellidos" /></td>
+                        </tr>
+                        <tr>
+                            <td>Grado de Estudio</td>
+                            <td><input type="text" name="grado_de_estudio" /></td>
+                        </tr>
+                        <tr>
+                            <td>Curso</td>
+                            <td><input type="text" name="curso" /></td>
+                        </tr>
+                        <tr>
+                            <td>Sexo</td>
+                            <td><input type="text" name="sexo" /></td>
+                        </tr>
+                        <tr>
+                            <td>Teléfono</td>
+                            <td><input type="text" name="telefono" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="submit" value="Grabar" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
