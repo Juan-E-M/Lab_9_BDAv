@@ -1,4 +1,4 @@
-AColección: profesores
+Colección: profesores
 campos: 
 _id
 nombres
@@ -8,8 +8,3 @@ curso
 sexo
 telefono
 
-Models-> Profesor.js(completa)
-
-routes-> profesor.js (kevin)
-
-Views->profesor-> create.hbs(bill) , edit.hbs (juan) , index.hbs(aldo) , show.hbs(ruben)
